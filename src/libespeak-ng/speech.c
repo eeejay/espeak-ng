@@ -861,6 +861,8 @@ ESPEAK_API const char* espeak_TextToPhonemesWithTerminator(const void** textptr,
      phoneme names
    */
 
+  option_ssml = textmode & espeakSSML;
+
   if (p_decoder == NULL)
     p_decoder = create_text_decoder();
 
